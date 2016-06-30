@@ -1,7 +1,7 @@
 body{}
 header{display: block; background-color: #888; width: 100vw; height: 90px;}
 header img{height: 89px}
-header span{padding-top:10px; color: white; font-size: 19px; }
+header span{padding-top:10px; color: white; font-size: 22px; }
 main{padding: 20px;}
 footer{}
 .block{display: block}
