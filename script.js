@@ -9,25 +9,3 @@ var sources = [
    "quote": 'There is nothing that scares me more than, like, being in the ocean by myself.'
   }
 ]
-
-
-
-$('#trigger').click(function(){
-  var dirty = false;
-  $("#notice").html("");
-  var inputted =  $("#user_input").val().trim();
-  inputted= inputted.replace(/  +/g, ' ');
-
-  sources.forEach(function(source){
-     console.log(source.quote);
-    //  if (source.quote.indexOf(inputted) > -1) {
-     if (inputted.indexOf(source.quote) > -1) {
-       dirty = true;
-       $("#notice").append("<br>You have stolen from "+source.author);
-     }
-  })
-  if (!dirty){
-      console.log("not dirty");
-     $("#notice").append("<br>Wonderful, original prose !");
-  }
-})
